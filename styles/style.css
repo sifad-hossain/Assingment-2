@@ -36,7 +36,10 @@ body{
 }
 
 
-
+a{
+    text-decoration: none;
+    color: black;
+}
 
 
 
@@ -49,12 +52,86 @@ body{
 /* Header Styles */
 
 
-/* 
+
+.website{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto 0 auto;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+
+.website-title{
+    color: #424247;
+    font-size: 1rem;    
+    font-weight: 400;
+}
+
+
+#web-title{
+    color: #FF5400;  
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.web-frist-name{
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.web-last-name{
+    color: #FF5400;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .content{
-   width: 70%;
+    border: 1px solid rgb(113, 110, 110);
+    width: 70%;
     height: 500px;
-    margin: 0 auto;     
+    margin: 25px auto 0 auto;     
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
     url(../Images/Group\ 13\ \(1\)\ \(1\).png);
@@ -64,9 +141,8 @@ body{
 
 .container{   
     color: #FFF; 
-    gap: 5px; */
-    /* border: 1px solid red; */
-/* }
+    gap: 5px;  
+}
 
 .container-title{      
     font-size: 4rem;    
@@ -80,19 +156,17 @@ body{
     font-weight: 400;
     text-align: center;
     line-height: 26px;
-    margin: 0 auto;     */
-    /* margin-left: 220px;
-    margin-right: 220px;
-    margin-top: -90px; */
- /* }
+    margin: 0 auto;  
+    margin-top: -90px; 
+       
+ }
 
-.container-button{   */
-    /* border: 2px solid blue; */
-    /* width: 72%;
+.container-button{     
+    width: 72%;
     height: 52px;
-    margin: 50px auto 0 auto;
+    margin: 30px auto 0 auto;
     display: flex;
-    gap: 1.25rem;
+    gap: 20px;
     justify-content: space-around;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);   
@@ -113,13 +187,15 @@ body{
 }
 
 
-.container-button .container-btn-primary{   
+ .container-btn-primary{   
     width: 24%;
     color: #FFF;
+    font-size: 1rem;
+    font-weight: 500;
     background: #FF5400;
     border-radius: 8px;
     padding-left: 20px; 
-} */
+}
 
 
 
@@ -297,7 +373,6 @@ body{
 
  
 
-
  @media  (max-width:576px) {
     .hotel{
         flex-direction: column;
@@ -325,14 +400,16 @@ body{
     .country-img-first,
     .country-img-second,
     .country-img-third,
-    .article-container    
+    .article-container        
     {
         flex-direction: column;
     }
    
     .article-style,
     .article-img,
-    .article-img img
+    .article-img img,
+    .website,
+    .content   
     {
         width: 100%;
     }
@@ -343,6 +420,37 @@ body{
     .article-img img{
         margin-top: 20px;
     }
+    .container-title{      
+        font-size: 1.5rem;    
+        font-weight: 800;  
+        text-align: center;
+        padding-top: 5px;
+    }
+    .container-description{ 
+        width: 90%;      
+    text-align: center;   
+    font-size: 0.8rem;  
+    font-weight: 400;
+    line-height: 21px;
+    padding-top: 60px;
+    }
+    .container-button{
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+        align-items:center;
+    }
+    .container-btn    
+    {
+        width: 80%;
+        height: 52px;
+    }
 
- }
+    .container-btn-primary{
+        width: 80%;
+        height: 52px;
+        text-align: center;
+    }
+    
+ } 
 
