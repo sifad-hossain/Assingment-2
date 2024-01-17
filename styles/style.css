@@ -97,36 +97,6 @@ nav li{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .content{
     border: 1px solid rgb(113, 110, 110);
     width: 70%;
@@ -186,6 +156,15 @@ nav li{
     padding-left: 20px;    
 }
 
+ .select-one{
+    padding-left: 70px;
+    border: none;
+}
+
+.select-two{
+    padding-left: 40px;
+    border: none;
+}
 
  .container-btn-primary{   
     width: 24%;
@@ -261,11 +240,12 @@ nav li{
 .country-img-first{
     display: flex; 
     justify-content: space-between;
-    margin-bottom: 10px;      
+    margin-bottom: 10px; 
 }
 
+
 .country-img-first img{
-    width: 48%;  
+    width: 48%; 
 }
 
 .country-img-second{
@@ -289,6 +269,13 @@ nav li{
 .country-img-third{
     display: flex;
     justify-content: space-between;    
+}
+
+.rectangle-11{
+    width: 48%;
+}
+.rectangle-10{
+    width: 48%;
 }
 
 .country-img-third img{
@@ -372,8 +359,9 @@ nav li{
 }
 
 .main-newsletter{
-    width: 70%;
-    margin: 0 auto;
+    width: 70%;    
+    margin: 70px auto 0 auto;
+
 }
 
 
@@ -453,6 +441,33 @@ nav li{
 }
 
 
+.newsletter-discount{
+    position:relative;
+    top: -133px;
+    left: 410px;
+   color: #FFF;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #FF5400;
+    border-radius: 16px;
+    width: 36%;
+    height: 55px;
+    transform: rotate(-19.628deg);
+    padding-top: 17px;
+    padding-bottom: 5px;
+}
+
+
+.newsletter-com{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+.newsletter-save{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
 
 
 
@@ -460,6 +475,71 @@ nav li{
 
 
 
+
+
+
+
+
+
+
+
+
+.footer{   
+    width: 100%;
+    height: 450px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer-main{
+    padding-top: 70px;
+    text-align: center;
+}
+
+
+.footer-hr{
+    width: 65%;
+    height: 20px;
+    margin: 60px auto 0 auto;
+}
+
+
+.footer-copy{
+    width: 50%;
+    text-align: center;
+    margin: 20px auto 0 auto;  
+}
+
+
+.footer-description{
+    color: #5A5A5D; 
+    font-size: 1rem;  
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 10px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;  
+}
+
+
+.footer-title-first{
+    color:  #131318;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+
+.footer-title-second{
+    color: #FF5400;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.footer-copyright{
+    color: #131318;  
+    font-size: 1rem;
+    font-weight: 300;
+}
 
 
 
@@ -477,6 +557,10 @@ nav li{
  
 
  @media  (max-width:576px) {
+    .website-list {
+        display: none;
+    }
+
     .hotel{
         flex-direction: column;
         width:100%
@@ -515,11 +599,11 @@ nav li{
     .website,
     .content,
     .main-newsletter,
-    .newsletter-paper,
-    .newsletter-image   
+    .footer 
     {
         width: 100%;
     }
+   
     .article
     {
         width: 90%;
@@ -535,11 +619,11 @@ nav li{
     }
     .container-description{ 
         width: 90%;      
-    text-align: center;   
-    font-size: 0.8rem;  
-    font-weight: 400;
-    line-height: 21px;
-    padding-top: 60px;
+        text-align: center;   
+        font-size: 0.8rem;  
+        font-weight: 400;
+        line-height: 21px;
+        padding-top: 60px;
     }
     .container-button{
         width: 80%;
@@ -553,11 +637,47 @@ nav li{
         height: 52px;
     }
 
+    .select-one{
+        padding-left: 250px;
+        border: none;
+    }
+    
+    .select-two{
+        padding-left: 210px;
+        border: none;
+    }
+
     .container-btn-primary{
         width: 80%;
         height: 52px;
         text-align: center;
     }
-    
+    .newsletter-paper   
+    {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .newsletter-image {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .newsletter-discount{
+        top: -127px;
+        left: 280px;
+        height: auto;
+        width:44%
+    }
+    .footer-copy{
+        width: 70%;
+    }
+    .country-img-first h5{    
+        top: -150px;
+        right:10px;   
+    }
+    .country-img-second h6{
+        top: -190px;
+        right:10px;     
+        font-weight: 700;
+    }
  } 
 
